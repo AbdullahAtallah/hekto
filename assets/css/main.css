@@ -7,7 +7,7 @@ body{
     height: 1600px;
 }
  .header .container{
-    width: 70%;
+    width: 85%;
     margin:auto;
     display: flex;
     align-items: center;
@@ -67,14 +67,15 @@ spam{
 }
 .footer{
     margin-top: 50px;
+    padding: 50px 0;
     background-color: #EEEFFB;
 }
 
  .footer .container{
-    width: 70%;
+    width: 85%;
     margin:auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
@@ -103,6 +104,11 @@ spam{
     background-color: rgb(251, 46, 134);
     border: 0;
 }
+.footer .left-side .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .footer ul , p{
     color: #8A8FB9;
     list-style: none;
@@ -110,12 +116,12 @@ spam{
 .footer .right-side .footer-item{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 45px;
 }
 .footer-item ul{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 @media screen and (min-width:320px) and (max-width:990px) {
