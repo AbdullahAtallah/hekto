@@ -3,30 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 1600px;
-}
- .header .container{
-    width: 85%;
-    margin:auto;
+
+
+
+.header .container {
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
-}
-
-.header {
-    margin-top: 50px;
-    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 
-.header  ul {
+
+
+.header ul {
     display: flex;
     list-style: none;
     gap: 35px;
 }
 
-.header .list{
+.header .list {
     display: flex;
     align-items: center;
 }
@@ -37,106 +35,213 @@ body{
     text-decoration: none;
     transition: .8s;
     color: #0D0E43;
+    font-family: "Lato", sans-serif;
 }
 
-spam{
+spam {
     color: #FB2E86;
 }
-.header form{
-     border: 1px solid rgb(169, 166, 166);
+
+.header form {
+    border: 1px solid rgb(169, 166, 166);
     display: flex;
 }
- input{
+
+input {
     border: 0;
     padding: 0 10px;
     width: 280px;
 }
-.header button{
+
+.header button {
     height: 40px;
     width: 50px;
     background-color: #FB2E86;
     border: 0;
 }
 
-.header .menu{
+.header .menu {
     display: none;
 }
-.header a:hover{
+
+.header a:hover {
     color: #FB2E86;
     font-size: 18px;
 }
-.footer{
+
+.footer {
     margin-top: 50px;
     padding: 50px 0;
     background-color: #EEEFFB;
+    font-family: "Lato", sans-serif;
 }
 
- .footer .container{
-    width: 85%;
-    margin:auto;
+.footer .container {
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 }
-.footer .right-side{
-    width:calc((100% - 20px)/2);
+
+.footer .right-side {
+    width: calc((100% - 20px)/2);
     display: flex;
-    gap: 30px;
-    align-items:flex-start;
+    gap: 20px;
+    align-items: flex-start;
 }
-.footer .left-side{
-    width:calc((100% - 20px)/2);
+
+.footer .left-side {
+    width: calc((100% - 20px)/2);
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
 }
-.footer form{
-     border: 1px solid rgb(169, 166, 166);
-     display: flex;
+
+.footer form {
+    border: 1px solid #aaa7a7;
+    display: flex;
 }
-.footer button{
+
+.footer button {
     height: 40px;
     width: 80px;
-    background-color: rgb(251, 46, 134);
+    background-color: #fb2e86;
     border: 0;
 }
-.footer .left-side .contact{
+
+.footer .left-side .contact {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer ul , p{
+
+.footer ul,
+p {
     color: #8A8FB9;
     list-style: none;
 }
-.footer .right-side .footer-item{
+
+.footer .right-side .footer-item {
+    width: calc((100% - 40px) / 3);
     display: flex;
     flex-direction: column;
     gap: 45px;
 }
-.footer-item ul{
+
+.footer-item ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
+.featured-products {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.product .product-image {
+    background-color: #F6F7FB;
+    height: 235px;
+
+}
+
+.product .product-image img {
+    margin-top: 45px;
+}
+
+.btn-color {
+    border: 0;
+    outline: 0;
+    width: 15px;
+    height: 5px;
+    border-radius: 5px;
+
+}
+
+.light-green {
+    background-color: #05E6B7;
+}
+
+.light-pink {
+    background-color: #F701A8;
+}
+
+.blue {
+    background-color: #00009D;
+}
+
+.featured-products h2 {
+    text-align: center;
+    color: #1A0B5B;
+    margin-bottom: 45px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.product-info {
+    color: #151875;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.product-details h3 {
+    margin-top: 15px;
+    color: #FB2E86;
+    font-family: "Lato", sans-serif;
+
+
+}
+
 @media screen and (min-width:320px) and (max-width:990px) {
 
     .header .list,
-    .header .search{
+    .header .search {
         display: none;
     }
-    .header .menu{
+
+    .header .menu {
         display: block;
     }
 
     .footer .left-side,
-    .footer .right-side{
+    .footer .right-side {
         width: 100%;
     }
-} 
 
+    .product {
+        width: calc((100% - 30px) / 2);
+    }
+}
